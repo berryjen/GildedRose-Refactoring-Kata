@@ -16,8 +16,8 @@ describe('Gilded Rose', () => {
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toBe(0);
   });
-  it('should never lower the quality of Sulfuras', () => {
-    const gildedRose = new GildedRose([new Item('Sulfuras', 0, 1)]);
+  it('should never lower the quality of Sulfuras, Hand of Ragnaros', () => {
+    const gildedRose = new GildedRose([new Item('Sulfuras, Hand of Ragnaros', 0, 1)]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toBe(1);
   });
